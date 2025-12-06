@@ -109,11 +109,11 @@
                         </div>
                         <div class="contact-item">
                             <strong>📧 Email:</strong>
-                            <p>info@mkpropertyservices.com</p>
+                            <p><a href="mailto:info@mkpropertyservices.com">info@mkpropertyservices.com</a></p>
                         </div>
                         <div class="contact-item">
                             <strong>📞 Phone:</strong>
-                            <p>(555) 123-4567</p>
+                            <p><a href="tel:+15551234567">(555) 123-4567</a></p>
                         </div>
                         <div class="contact-item">
                             <strong>🕒 Hours:</strong>
@@ -123,11 +123,15 @@
                 </div>
                 <div class="contact-form">
                     <h3>Request a Quote</h3>
-                    <form>
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <input type="tel" placeholder="Phone Number">
-                        <select required>
+                    <form action="#" method="POST">
+                        <label for="name" class="sr-only">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <label for="email" class="sr-only">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <label for="phone" class="sr-only">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                        <label for="service" class="sr-only">Select Service</label>
+                        <select id="service" name="service" required>
                             <option value="">Select Service</option>
                             <option value="maintenance">Property Maintenance</option>
                             <option value="cleaning">Professional Cleaning</option>
@@ -136,7 +140,8 @@
                             <option value="repairs">Home Repairs</option>
                             <option value="other">Other Services</option>
                         </select>
-                        <textarea placeholder="Tell us about your needs" rows="4"></textarea>
+                        <label for="message" class="sr-only">Tell us about your needs</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your needs" rows="4"></textarea>
                         <button type="submit" class="submit-button">Send Request</button>
                     </form>
                 </div>
