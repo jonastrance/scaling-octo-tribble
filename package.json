@@ -1,0 +1,15 @@
+{
+  "name": "scaling-octo-tribble",
+  "version": "1.0.0",
+  "description": "A revolutionary WebGL experience featuring a living, growing digital creature inspired by the legendary Star Trek tribbles, with an autumn October theme.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.128.0"
+  }
+}
